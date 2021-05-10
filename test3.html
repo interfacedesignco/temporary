@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>    
+</head >
+<body>
+	<br/>
+    <div id="idDiv" style="font-family: Arial, sans-serif; font-size: 10.5pt;line-height: 1.5;">
+		<strong>Tim Smith</strong> RGD (he, him, his)<br/>
+		External Design Consultant</br>
+		<a href="mailto:tim@tsmith.ca" style="color:#ce1126; text-decoration:none !important; text-decoration:none;"><span>tim@tsmith.ca</span></a></br>
+		T. +1-416-898-4065<br/>
+		<br/>
+		<br/>
+		<a href="mailto:tim@tsmith.ca" style="color:#E3A216; text-decoration:none;">
+		  <span style="color:#E3A216; text-decoration:none;">
+			<font color="#E3A216">
+			  Link 1
+			</font>
+		  </span>
+		</a>
+		<br>
+		<br/>
+		<a href="#" style="text-decoration:none !important; text-decoration:none;">BOOK NOW</a><br/><br/>
+		<a href="http://www.xink.io" style="text-decoration: none;"> 
+<font face="Arial, Helvetica, Sans-Serif" color="#000000" style="FONT-SIZE: 10pt">
+www.xink.io
+</font> 
+</a>
+	</div>
+	<br/>
+	<input type="button" id="idButton1" value="Copy Signature" />
+   
+    <script type="text/javascript" src="tinyclipboard.js"></script>
+    <script type="text/javascript">
+        var clipboard1 = new TinyClipboard({
+            button: "idButton1",
+            target: "idDiv"
+        });
+        var msg = clipboard1.message();
+        console.log(msg);
+        var clipboard2 = new TinyClipboard({
+            button: "idButton2",
+            content: '<a href="www.google.com" style="font-size:large; color:red;font-family:"Segoe UI", Tahoma, Geneva, Verdana, sans-serif"><strong>google link</strong></a>',
+            format: "html"
+        });
+    </script>
+</body>
+</html>
