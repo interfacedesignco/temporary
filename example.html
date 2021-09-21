@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>    
+</head >
+<body>
+    <div id="emailSig" style="font-family:arial; font-size:10pt; color:blue;">Tim Smith</div> <input type="button" id="idButton1" value="Copy Div" />
+
+    <script type="text/javascript" src="tinyclipboard.js"></script>
+    <script type="text/javascript">
+        var clipboard1 = new TinyClipboard({
+            button: "idButton1",
+            target: "emailSig"
+        });
+        var msg = clipboard1.message();
+        console.log(msg);
+    </script>
+</body>
+</html >
