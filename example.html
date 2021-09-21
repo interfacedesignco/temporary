@@ -13,14 +13,13 @@
 			T.&nbsp;<a href="tel:+14168984065" style="color:#000000; text-decoration:none;"><span style="color:#000000; text-decoration:none;"><font color="#000000">+1-416-898-4065</font></span></a>
 		</div>
 	</div> 
-	<input type="button" id="idButton1" value="Copy Div" />
+	<input type="button" id="idButton1" value="Copy Signature" />
 
     <script type="text/javascript" src="tinyclipboard.js"></script>
     <script type="text/javascript">
         var clipboard1 = new TinyClipboard({
             button: "idButton1",
-            target: "emailSig",
-			format: 'html'
+            target: "emailSig"
         });
         var msg = clipboard1.message();
         console.log(msg);
