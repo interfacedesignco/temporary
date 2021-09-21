@@ -19,7 +19,8 @@
     <script type="text/javascript">
         var clipboard1 = new TinyClipboard({
             button: "idButton1",
-            target: "emailSig"
+            target: "emailSig",
+			format: 'html'
         });
         var msg = clipboard1.message();
         console.log(msg);
