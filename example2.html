@@ -6,16 +6,21 @@
     <title></title>    
 </head >
 <body>
-   
+    <div id="idDiv" style="font-size:large; color:blue;"><strong>text to copy</strong></div> <input type="button" id="idButton1" value="Copy Div" />
+    <hr>
     <input type="button" id="idButton2" value="Copy html" />
 
     <script type="text/javascript" src="tinyclipboard.js"></script>
     <script type="text/javascript">
+        var clipboard1 = new TinyClipboard({
+            button: "idButton1",
+            target: "idDiv"
+        });
         var msg = clipboard1.message();
         console.log(msg);
         var clipboard2 = new TinyClipboard({
             button: "idButton2",
-            content: '<a href="mailto:tim@tsmith.ca" style="font-family: Arial, sans-serif; font-size: 10pt !important;line-height: 1.35; color:#ce1126; text-decoration:none;"><span style="color:#ce1126; text-decoration:none;"><font color="#ce1126">tim@tsmith.ca</font></span></a>',
+            content: '<a href="www.cbc.ca" style="font-size:large; color:red;font-family:"Segoe UI", Tahoma, Geneva, Verdana, sans-serif"><strong>CBC link</strong></a>',
             format: "html"
         });
     </script>
